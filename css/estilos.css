@@ -1,0 +1,261 @@
+/*
+CODIGO CREADO BAJO LICENCIA CREATIVE COMMONS
+Reconocimiento - NoComercial - CompartirIgual (by-nc-sa): 
+No se permite un uso comercial de la obra original ni de las posibles obras
+derivadas, la distribución de las cuales se debe hacer con una licencia igual
+a la que regula la obra original.
+*/
+
+/* 
+    Creado el  : 09-dic-2015, 11:21:03
+    Modificado : 29-nov-2016, 16:29:00
+    Modificado : 04-mar-2017, 23:19:00
+    Autor      : Felipe Rodríguez Gutiérrez
+*/
+
+/* Hoja de estilo del theme por defecto */
+
+/*
+    Diseño de la web en general
+*/
+
+html {
+    -webkit-font-smoothing: antialiased !important;
+    background-color: #e6e9e9;
+    background-repeat: repeat;
+}
+
+body {
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 4em 2em 1em;
+}
+
+/* Estilos del menu */
+.menu-btn, .exit-btn {
+    display: inline-block;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.menu-btn {
+    background-color: #545454;
+}
+
+.exit-btn {
+    background-color: #DC143C;
+}
+
+.menu a:link, a:visited, a:active, a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu, .bienvenida, .preferencias {
+    border: solid 1px;
+    border-color: #545454;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Estilo del mensaje de bienvenida */
+/************************************/
+
+.bienvenida {
+    text-align: justify;
+}
+
+/* Mensajes */
+/***********/
+.errcon, .error, .perfect {
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.error, .errcon {
+    border: 1px solid indianred;
+    color: indianred;
+    background-color: #ffcccc;
+}
+
+.perfect {
+    border: 1px solid #006400;
+    color: green;
+    background-color: #90EE90;
+    text-align: center;
+}
+
+.centrado{
+    text-align: center;
+}
+
+/* Tablas de datos */
+/*******************/
+table {
+    margin-top: 2px;
+    width: 100%;
+    border: 1px solid #545454;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.encabezado {
+    border: none;
+    background-color: #545454;
+    color: #ffffff;
+    margin: 0;
+    padding: 0px;
+    border-collapse: collapse;
+}
+
+.negativo {
+    color: indianred;
+    text-align: right;
+}
+
+.contable {
+    text-align: right;
+}
+
+.saldoFinal td {
+    text-align: right;
+    border-top: 1px dotted #545454;
+    font-weight: bold;
+}
+/* Pie de página */
+/*****************/
+footer {
+    font-size: 0.8em;
+    margin-bottom: 0.2px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+/* Formulario de preferencias */
+/******************************/
+
+.preferencias {
+    
+}
+
+/* Formulario de acceso-registro */
+/*********************************/
+.container {
+    width: 406px;
+    max-width: 406px;
+    margin: 0 auto;
+    border: 3px solid #545454;
+    border-radius: 5px;
+}
+
+#signup {
+    padding: 0px 25px 25px;
+    background: #fff;
+    box-shadow: 
+        0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: table;
+    position: static;
+}
+
+.inputs {
+    margin-top: 25px;
+}
+
+/* Etiquetas formulario de acceso-registro */
+.inputs label {
+    color: #545454;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+    display: block;
+}
+/* Color control formulario */
+input::-webkit-input-placeholder {
+    color:    #b5b5b5;
+}
+input:-moz-placeholder {
+    color:    #b5b5b5;
+}
+
+/* Controles del formulario */
+.inputs input[type=text], .inputs input[type=password], .inputs input[type=date], .inputs input[type=password] {
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #545454;
+    padding: 13px 10px;
+    width: 330px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Recuadro del formulario de acceso-registro */
+.inputs #submit {
+    width: 356px;
+    margin-top: 20px;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+        background: -moz-linear-gradient(
+        top,
+        #b9c5dd 0%,
+        #a4b0cb);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#b9c5dd),
+        to(#a4b0cb));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #737b8d;
+    -moz-box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    -webkit-box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    text-shadow:
+        0px 1px 3px rgba(000,000,000,0.3),
+        0px 0px 0px rgba(255,255,255,0);
+    display: table;
+    position: static;
+    clear: both;
+}
+
+/* Boton de acceso-registro */
+.inputs #submit:hover {
+    background: -moz-linear-gradient(
+        top,
+        #a4b0cb 0%,
+        #b9c5dd);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#a4b0cb),
+        to(#b9c5dd));
+}
